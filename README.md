@@ -1,10 +1,60 @@
-# How to Casting
+# Relic CLI
 
 **Forged through Rune. Built upon PHP.**
 
-A small runite to learn how a cast is spoken, how spells shape it, and how one cast can call another. Your first step out of the void.
+How to cast: a small runite to learn how a cast is spoken, how spells shape it, and how one cast can call another. Your first step out of the void.
 
 **[Explore Rune ↗](https://github.com/devneet-id/rune)**
+**[Explore Reliquary ↗](https://github.com/devneet-id/reliquary)**
+
+---
+
+## The Relic
+
+This repo is a **relic**: a runite sealed as a `.rune`, listed in the **[Reliquary](https://github.com/devneet-id/reliquary)**.
+
+| Relic | `.rune` | Carries |
+| ----- | ------- | ------- |
+| `devneet-id/relic-cli/cast` | `cast.rune` | the runite `cast` |
+
+### Get it
+
+**From the void** — a new folder, Rune and one awakening file:
+
+```bash
+composer require devneet/rune
+```
+
+```php
+#!/usr/bin/env php
+<?php
+require_once __DIR__ . '/vendor/autoload.php';
+
+Rune\Ethereal::awakening();
+```
+
+Save it as `cast`, then:
+
+```bash
+php cast
+```
+
+Answer `y`, and choose `devneet-id/relic-cli/cast`.
+
+**Into a runite you already have:**
+
+```bash
+php cast reliquary --relic-runite=devneet-id/relic-cli/cast
+```
+
+**Or clone this repo:**
+
+```bash
+git clone https://github.com/devneet-id/relic-cli.git
+cd relic-cli
+composer install
+php cast
+```
 
 ---
 
@@ -27,13 +77,7 @@ Want to engrave your own? Start from the **[Rune repository](https://github.com/
 
 * PHP 8.1+
 * Composer
-
-### Install
-
-```bash
-composer install
-php cast
-```
+* Rune 1.20+ *(for the reliquary)*
 
 ---
 
@@ -80,7 +124,7 @@ php cast fire --zero-trust
 php cast fir
 ```
 
-Every runite also carries the built-in casts of Rune: `rune` (the main screen), `grimoire`, `artefact` and `sentinel`.
+Every runite also carries the built-in casts of Rune: `grimoire`, `reliquary` and `sentinel`.
 
 ---
 
@@ -100,6 +144,8 @@ Every runite also carries the built-in casts of Rune: `rune` (the main screen), 
 ## References
 
 * [Rune](https://github.com/devneet-id/rune) — Application foundation and tooling.
+* [Rune Lore](https://github.com/devneet-id/rune-lore) — The full documentation, from the void to the beyond.
+* [Reliquary](https://github.com/devneet-id/reliquary) — The relics of Rune.
 
 ---
 
